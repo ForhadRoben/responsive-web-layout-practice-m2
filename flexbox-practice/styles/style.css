@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../images/papers.co-mm18-sunset-reed-flower-nature-1366x768.jpg);
+    position: relative;
+
+}
+
+/* practice main-container for flexbox using inspect */
+.main-container {
+    height: 100vh;
+    width: 100%;
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    height: 70px;
+    width: 73px;
+    background-image: linear-gradient(45deg, tomato, yellow);
+    border-radius: 8px;
+}
+
+.parent-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.child-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.position {
+    border: 2px solid cyan;
+    border-radius: 8px;
+    height: 74px;
+    width: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: rgb(247, 3, 3);
+}

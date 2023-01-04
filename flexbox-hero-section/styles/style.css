@@ -1,0 +1,98 @@
+:root {
+    /* --name:value; */
+    --primary-font: 'Sevillana', cursive;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 60vh;
+    width: 70%;
+    display: flex;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.card-text {
+    height: 100%;
+    width: 50%;
+    color: lightgrey;
+    background-color: rgb(28, 87, 95);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+
+}
+
+.card-text input[type="button"] {
+    width: 50%;
+    font-size: medium;
+    font-family: var(--primary-font);
+    border-radius: 20px;
+    padding: 10px 0;
+    margin-left: 120px;
+}
+
+.card-title>h1 {
+    font-family: var(--primary-font);
+    margin-bottom: 20px;
+}
+
+.card-title>h1>span {
+    color: tomato;
+}
+
+.card-state {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-img {
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+
+.card-img>img {
+    filter: grayscale(100%);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(10, 243, 21);
+    /* position practice demo: */
+    position: absolute;
+    /* top: 10%;
+    left: 10%; */
+    /* right: 10%; */
+    /* bottom: 10%; */
+    opacity: .33;
+    z-index: 1;
+    /* transition: all ease-in-out 3s; */
+}
+
+.card:hover .overlay {
+    opacity: 0;
+}
+
+.card:hover .card-img>img {
+    filter: grayscale(0%);
+}
